@@ -16,8 +16,6 @@ RUN mkdir -p $CATALINA_HOME/conf && \
     mvn package && \
     mkdir $CATALINA_HOME/webapps/ && \
     cp /opt/boxfuse-sample-java-war-hello/target/hello-1.0.war $CATALINA_HOME/webapps/hello-1.0.war
-
-EXPOSE 8080
+EXPOSE 8081
 CMD ["catalina.sh", "run"]
-
 
