@@ -9,8 +9,6 @@ services:
       build:
          context: .
          dockerfile: dockerfile_tomcat
-      links:
-      - dev
       volumes:
          - app-volume:/usr/share/tomcat8/webapps/
       ports:
